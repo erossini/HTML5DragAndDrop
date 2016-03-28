@@ -5,4 +5,4 @@ The event listener methods for all the drag and drop events accept Event object 
 
 How to use them in a C# MVC project? You find a description of this project on http://puresourcecode.com/dotnet/post/C-and-HTML5-drag-and-Drop-elements
 
-![HTML5DragAndDrop](/erossini/HTML5DragAndDrop/blob/master/DragAndDrop_App.PNG?raw=true)
+![HTML5DragAndDrop](https://raw.githubusercontent.com/erossini/HTML5DragAndDrop/master/DragAndDrop_App.PNG)
