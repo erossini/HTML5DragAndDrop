@@ -1,0 +1,41 @@
+﻿@{
+   ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Drag and drop example</h1>
+    <p class="lead">HTML5 API includes Drag and Drop (DnD) native functionality. The event listener methods for all the drag and drop events accept Event object which has a readonly attribute called dataTransfer. The event.dataTransfer returns DataTransfer object associated with the event.</p>
+    <p><a href="http://puresourcecode.com" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <p id="1A">1: A</p>
+    <p id="2B">2: B</p>
+    <p id="3C">3: C</p>
+    <p id="4D">4: D</p>
+    <p id="5E">5: E</p>
+    <div id="divBoxElements" style="border: 1px solid #dcdcdc; width: 300px; height: 300px;"></div>
+</div>
+
+@section scripts {
+    <script src="~/Scripts/html5utils.js"></script>
+    <script>
+        <!--
+        function InsertTestElement(element) {
+            var url = '@Url.Action("InsertTestElements", "Home")';
+
+            $.post(url, { testElement: element }, function (data) {
+                switch (data) {
+                    case 1:
+                        divBoxElements.innerHTML = element + " inserted OK";
+                        setTimeout(function () { divBoxElements.innerHTML = ""; }, 2000);
+                        break;
+
+                    default:
+                        alert("Error inserting the element");
+                }
+            });
+        }
+        //-->
+    </script>
+}
